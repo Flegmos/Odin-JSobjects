@@ -7,13 +7,19 @@ html, body {
     width: 100%;
     min-height: 100vh;
 }
-.book-container {
+.main-container {
+    display:flex;
+}
+.library-container {
+    flex: 1 1 80vh;
     display:grid;
-    grid-template-columns: repeat(auto,minmax(100px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 1fr;
     gap:2rem;
+    height: 100vh;
 
 }
-.book-widged {
+.library-widget {
     background-color: blanchedalmond;
     border: 1px black;
     border-radius: 1rem;
