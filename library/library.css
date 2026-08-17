@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+.book-container {
+    display:grid;
+    grid-template-columns: repeat(auto,minmax(100px,1fr));
+    gap:2rem;
+
+}
+.book-widged {
+    background-color: blanchedalmond;
+    border: 1px black;
+    border-radius: 1rem;
+}
