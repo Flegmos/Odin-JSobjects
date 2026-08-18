@@ -11,11 +11,41 @@
 
 <body>
     <div class="main-container">
-        <div class = "library-header"></div>
+        <div class="library-header">
+            <h1>Library Demo</h1>
+            <div>
+                <button id="showAddBook" class="mybutton">Add book</button>
+            </div>
+        </div>
         <div class="library-container" id="libraryContainer">
 
         </div>
     </div>
+
+    <dialog id="mydialog" popover="manual">
+        <form method="dialog" class="addBookForm">
+            <div>
+                <label for="name" >Book name: </label>
+                <input name="name" type="text" id="nameInputId">
+            </div>
+            <div>
+                <label for="genre" >Genre: </label>
+                <input name="genre" type="text" id="genreInputId">
+            </div>
+            <div>
+                <label for="pageNum">Number of pages: </label>
+                <input name="pageNum" type="number" id="pageNumInputId">
+            </div>
+            <div>
+                <label for="desc">Short description: </label>
+                <textarea name="desc" type="text" rows="3" id="descInputId"></textarea>
+            </div>
+            <div>
+                <button id="addBook" class="mybutton">Add new book</button>
+                <button id="cancelBook" commandfor="my-dialog" command="close" class="mybutton">cancel</button>
+            </div>
+        </form>
+    </dialog>
 </body>
 
 </html>
